@@ -29,7 +29,7 @@ params [
 
 if (_iteration == 0) then {
     if (!(_array_mod isEqualType createHashMap))    exitWith {false};
-    if (count _array_units == 0)                    exitWith {false};
+    if (_array_units isEqualTo [])                  exitWith {false};
 };
 _iteration = _iteration + 1;
 
