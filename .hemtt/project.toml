@@ -4,7 +4,10 @@ mainprefix = "zrn"
 
 [properties]
 author = "MrZorn"
-url = "https://github.com/OverlordZorn/STORM-Framework"
+url = "https://github.com/CVO-Org/STORM-Framework"
+
+[binarize]
+enabled = true # Default: true
 
 [files]
 include = [
@@ -24,6 +27,8 @@ exclude = [
     "/extras/",
     "/docs/",
     "/docs2/",
+    "/template_addon/",
+    "/Workshop/"
 ]
 
 [version]
@@ -32,4 +37,3 @@ path = "addons/main/script_version.hpp"
 #minor = 1
 #patch = 0
 #git_hash = 0 # Default: 8
-
