@@ -1,20 +1,19 @@
-
-[default]
+[dependencies]
 workshop = [
     "450814997",  # CBA_A3's Workshop ID
+]
+
+[default]
+extends = "dependencies"
+workshop = [
     "463939057",  # ACE3
     "3499977893", # Advanced Developer Tools
     "1779063631", # Zeus Enhanced
-#    "1613905318", # Emitter 3Ditor
-#    "1645973522", # Intercept Minimal Dev
-#    "1585582292", # Arma Debug Engine
 ]
+mission = "test-storm-framework.altis"
 
-dlc = [
-]
-
-optionals = [
-]
+dlc = []
+optionals = []
 
 parameters = [
     "-debug",
@@ -26,45 +25,34 @@ parameters = [
 
 executable = "arma3_x64"        # Default: "arma3_x64"
 
-[Altis]
+[debug]
 extends = "default"
-mission = "test-storm-framework.altis"
-
-
-[Debugger]
-extends = "default"
-mission = "test-storm-framework.altis"
 workshop = [
-    "450814997", # CBA_A3's Workshop ID
-    "463939057", # ACE3
-    "3499977893", # Advanced Developer Tools
-    "1779063631", # Zeus Enhanced
-#    "1613905318", # Emitter 3Ditor
     "1645973522", # Intercept Minimal Dev
     "1585582292", # Arma Debug Engine
 ]
 
-
-[Emitter]
+[emitter]
 extends = "default"
+mission = ""
 workshop = [
     "1613905318", # Emitter 3Ditor
 ]
 
-[Enoch]
+[enoch]
 extends = "default"
 mission = "test-storm-framework.enoch"
 
-[Stratis]
+[stratis]
 extends = "default"
 mission = "test-storm-framework.stratis"
 
-[SefrouRamal]
+[ws]
 extends = "default"
 mission = "test-storm-framework.SefrouRamal"
 dlc = ["ws"]
 
-[KorsacWinter]
+[korsacWinter]
 extends = "default"
 mission = "test-storm-framework.VTF_Korsac_Winter"
 workshop = [
@@ -73,20 +61,11 @@ workshop = [
     "3043678553", # Korsac, Sullen Skies
 ]
 
-[Korsac]
+[korsac]
 extends = "default"
 mission = "test-storm-framework.VTF_Korsac"
 workshop = [
 #    "1613905318", # Emitter 3Ditor
     "3043043427", # Korsac
     "3043678553", # Korsac, Sullen Skies
-]
-
-[Dependency]
-extends = "default"
-mission = "test-storm-framework.altis"
-workshop = [
-    "450814997", # CBA_A3's Workshop ID
-#    "463939057", # ACE3
-    "3499977893", # Advanced Developer Tools
 ]
