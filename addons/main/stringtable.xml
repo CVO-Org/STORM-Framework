@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="storm">
+    <Package name="Main">
+        <Key ID="STR_storm_main_author">
+            <English>OverlordZorn [CVO]</English>
+        </Key>
+        <Key ID="STR_storm_main_url">
+            <English>https://github.com/CVO-Org/STORM-Framework</English>
+        </Key>
+    </Package>
+</Project>
