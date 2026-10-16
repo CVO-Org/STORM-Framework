@@ -11,19 +11,13 @@ url = "https://github.com/CVO-Org/STORM-Framework"
 # enabled = true # Default: true
 
 [files]
-include = [
-    "mod.cpp",      # These files are copied to the build directory by default
-    "meta.cpp",     # They do not need to be added to your list
-    "LICENSE",
+include = [         # mod.cpp, meta.cpp, LICENSE, logo_ca.paa and logo_co.paa are copied by default
     "/img/*.paa",
-    "logo_ca.paa",
-    "logo_co.paa",
     "*.bikey",
 ]
 exclude = [
     "*.psd",        # By default this list is empty
     "*.md",
-    "/.vscode/",
 ]
 
 [version]

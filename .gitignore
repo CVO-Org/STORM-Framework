@@ -7,3 +7,5 @@ hemtt.exe
 /releases
 
 .hemttprivatekey
+meta.cpp
+*.drawio.bkp

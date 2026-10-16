@@ -18,8 +18,8 @@
 name: "Release: Publish to Steam [DEV]"
 
 env:
-  FOLDER: '@STORM-Framework_dev'
-  WORKSHOPID: '0000000000'
+  FOLDER: '@STORM_dev'
+  WORKSHOPID: '3820802190'
   WORKSHOPNAME: 'STORM Framework [DEV]'
 
 on:
