@@ -31,7 +31,6 @@ concurrency:
 
 jobs:
   release:
-    if: false # Remove this line once the workflow is set up - see "How to use" above
     uses: A3-AZ/a3_workflows/.github/workflows/release_steam.yml@v1
     with:
       mod-folder: '@STORM'
@@ -46,5 +45,4 @@ jobs:
     secrets:
       steam-username: ${{ secrets.STEAM_USERNAME }}
       steam-password: ${{ secrets.STEAM_PASSWORD }}
-      # The org secret DISCORD_WEBHOOK_URL reaches this repo - uncomment to announce releases on Discord
-      # discord-webhook: ${{ secrets.DISCORD_WEBHOOK_URL }}
+      discord-webhook: ${{ secrets.DISCORD_WEBHOOK_URL }} # shared CVO release channel (org secret)
